@@ -4,10 +4,10 @@ function book() {
 
 const $root = document.getElementById('root');
 
-$root.addEventListener('click', function (event) {
-  console.log('target: ', event.target);
-  console.log('id: ', event.target.id);
-});
+// $root.addEventListener('click', function (event) {
+//   console.log('target: ', event.target);
+//   console.log('id: ', event.target.id);
+// });
 
 /**
  * photos for each medium as background photo
