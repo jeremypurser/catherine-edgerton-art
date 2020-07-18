@@ -1,3 +1,55 @@
 body {
   font-family: 'Work Sans', sans-serif;
 }
+
+#media ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li {
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem 0.5rem;
+}
+
+li.media a,
+li.media a:link,
+li.media a:visited {
+  display: inline-block;
+  width: 280px;
+  height: 200px;
+  color: transparent;
+}
+
+li a:hover {
+  color: #fff;
+  background-color: rgba(0, 128, 128, 0.75);
+  text-align: center;
+  line-height: 210px;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+#books {
+  background-image: url(img/books-preview.jpg);
+  background-size: cover;
+}
+
+#glass {
+  background-image: url(img/glass-preview.jpg);
+  background-size: cover;
+}
+
+#paintings {
+  background-image: url(img/paintings-preview.jpg);
+  background-size: cover;
+}
+
+#photo {
+  background-image: url(img/photo-preview.jpg);
+  background-size: cover;
+}
