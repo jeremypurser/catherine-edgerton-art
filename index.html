@@ -7,26 +7,34 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
     <title>Catherine Edgerton</title>
   </head>
   <body id="root">
     <header>
-      <h1>Catherine Edgerton</h1>
+      <h1><a href="/index.html">Catherine Edgerton</a></h1>
+      <nav id="about">
+        <ul>
+          <li id="press"><a href="#">press</a></li>
+          <li id="story"><a href="#">story</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav id="about">
-      <ul>
-        <li id="press"><a href="#">press</a></li>
-        <li id="story"><a href="#">story</a></li>
-      </ul>
-    </nav>
     <nav id="media">
       <ul>
-        <li class="media" id="books"><a href="#" onclick="book()">books</a></li>
-        <li class="media" id="glass"><a href="#">glass</a></li>
-        <li class="media" id="paintings"><a href="#">paintings</a></li>
-        <li class="media" id="photo"><a href="#">photo</a></li>
-        <li>
+        <li class="media" id="books">
+          <a href="#" data-id="books">books</a>
+        </li>
+        <li class="media" id="glass">
+          <a href="#" data-id="glass">glass</a>
+        </li>
+        <li class="media" id="paintings">
+          <a href="#" data-id="paintings">paintings</a>
+        </li>
+        <li class="media" id="photo">
+          <a href="#" data-id="photo">photo</a>
+        </li>
+        <!-- <li>
           <img
             src="img/desert-catherine-edgerton-498x289.jpg"
             alt="Desert, Mixed Media, Summer 2018"
@@ -43,11 +51,11 @@
             src="img/history-catherin-edgerton-487x297.jpg"
             alt="History, Mixed Media, Spring 2018"
           />
-        </li>
+        </li> -->
       </ul>
     </nav>
-    <main></main>
-
-    <script type="text/javascript" src="index.js"></script>
+    <main id="hook"></main>
+    <script type="module" src="/js/books.js"></script>
+    <script type="module" src="/js/index.js"></script>
   </body>
 </html>

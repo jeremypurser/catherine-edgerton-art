@@ -1,5 +1,7 @@
 body {
   font-family: 'Work Sans', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #media ul {
@@ -9,25 +11,29 @@ body {
 }
 
 li {
-  align-items: center;
-  justify-content: center;
   margin: 0 0.5rem 0.5rem;
+  flex: 1 0 21%;
 }
 
 li.media a,
 li.media a:link,
 li.media a:visited {
   display: inline-block;
-  width: 280px;
-  height: 200px;
+  width: 100%;
+  min-height: 200px;
   color: transparent;
 }
 
-li a:hover {
+/* fade image and show text */
+li.media a:hover,
+li.active a,
+li.active a:hover,
+li.active a:link,
+li.active a:visited {
   color: #fff;
   background-color: rgba(0, 128, 128, 0.75);
   text-align: center;
-  line-height: 210px;
+  line-height: 200px;
 }
 
 nav li {
@@ -35,21 +41,21 @@ nav li {
 }
 
 #books {
-  background-image: url(img/books-preview.jpg);
+  background-image: url(../img/books-preview.jpg);
   background-size: cover;
 }
 
 #glass {
-  background-image: url(img/glass-preview.jpg);
+  background-image: url(../img/glass-preview.jpg);
   background-size: cover;
 }
 
 #paintings {
-  background-image: url(img/paintings-preview.jpg);
+  background-image: url(../img/paintings-preview.jpg);
   background-size: cover;
 }
 
 #photo {
-  background-image: url(img/photo-preview.jpg);
+  background-image: url(../img/photo-preview.jpg);
   background-size: cover;
 }
