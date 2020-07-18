@@ -1,7 +1,5 @@
 let slideIndex = 1;
 
-console.log('hiii');
-
 showSlides(slideIndex);
 
 function plusSlides(n) {
