@@ -18,6 +18,10 @@ h1 a {
   text-decoration: none;
 }
 
+header a {
+  color: #000;
+}
+
 header,
 #about ul {
   display: flex;
