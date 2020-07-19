@@ -17,6 +17,6 @@ export const booksList = [
   },
   {
     text: '1996-2000: Slected Works from Books (1-4)',
-    href: '#',
+    href: '../pages/sw-1-4.html',
   },
 ];
