@@ -92,7 +92,6 @@ function glass() {
   const fragment = document.createDocumentFragment();
   for (let i = 2; i > 0; i--) {
     const div = document.createElement('div');
-
     div.classList.add('glass-preview', `glass-preview-${i}`);
     const a = document.createElement('a');
     a.href = `../pages/glass-${i}.html`;
@@ -108,6 +107,16 @@ function paintings() {
   emptyHook();
   deactivate();
   activate('paintings');
+
+  const div = document.createElement('div');
+  div.classList.add('paintings-preview');
+  const a = document.createElement('a');
+  a.href = '../pages/paintings.html';
+  a.textContent = 'See slideshow';
+  div.appendChild(a);
+
+  $hook.appendChild(div);
+  window.scrollTo({ top: 0 });
 }
 
 function photo() {

@@ -103,3 +103,26 @@ li.book-title:before {
   line-height: 449px;
   background-color: rgba(0, 128, 128, 0.75);
 }
+
+.paintings-preview {
+  width: 600px;
+  height: 600px;
+  text-align: center;
+  margin: 0 auto;
+  background-image: url(../img/painting-harvey-preview.jpg);
+}
+
+.paintings-preview a,
+.paintings-preview a:link,
+.paintings-preview a:visited {
+  display: inline-block;
+  width: 100%;
+  min-height: 600px;
+  color: transparent;
+}
+
+.paintings-preview a:hover {
+  color: #fff;
+  line-height: 600px;
+  background-color: rgba(0, 128, 128, 0.75);
+}
