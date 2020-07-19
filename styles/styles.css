@@ -1,3 +1,7 @@
+html {
+  overflow-y: scroll;
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
   max-width: 1200px;
@@ -37,8 +41,13 @@ li.active a:visited {
   line-height: 200px;
 }
 
-nav li {
-  list-style-type: none;
+li {
+  list-style: none;
+}
+
+li.book-title:before {
+  content: '⤷ ';
+  font-size: 1.2rem;
 }
 
 #books {
@@ -59,4 +68,38 @@ nav li {
 #photo {
   background-image: url(../img/photo-preview.jpg);
   background-size: cover;
+}
+
+#main {
+  max-width: 1200px;
+}
+
+.glass-preview-1 {
+  background-image: url(../img/glass-1-preview.jpg);
+}
+
+.glass-preview-2 {
+  background-image: url(../img/glass-2-preview.jpg);
+}
+
+.glass-preview {
+  width: 600px;
+  height: 449px;
+  text-align: center;
+  margin: 0 auto 1rem;
+}
+
+.glass-preview a,
+.glass-preview a:link,
+.glass-preview a:visited {
+  display: inline-block;
+  width: 100%;
+  min-height: 449px;
+  color: transparent;
+}
+
+.glass-preview a:hover {
+  color: #fff;
+  line-height: 449px;
+  background-color: rgba(0, 128, 128, 0.75);
 }
