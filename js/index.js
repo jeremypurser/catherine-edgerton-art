@@ -1,12 +1,32 @@
 import { booksList } from './books.js';
+import { glassList } from './glass.js';
+
+function navigation() {
+  switch (window.location.hash) {
+    case '#books':
+      books(booksList);
+      break;
+    case '#glass':
+      glass();
+      break;
+    case '#paintings':
+      paintings();
+      break;
+    case '#photo':
+      photo();
+      break;
+    default:
+      '';
+  }
+}
+
+window.onload = navigation;
+
+window.addEventListener('popstate', navigation);
 
 const $root = document.getElementById('root');
 
 $root.addEventListener('click', function (event) {
-  // console.log('target: ', event.target);
-  // console.log('id: ', event.target.id);
-  // console.log(event.target.dataset.id);
-
   switch (event.target.dataset.id) {
     case 'books':
       books(booksList);
@@ -78,6 +98,18 @@ function glass() {
   emptyHook();
   deactivate();
   activate('glass');
+
+  const fragment = document.createDocumentFragment();
+
+  for (const glassItem of glassList) {
+    const img = document.createElement('img');
+    img.src = glassItem;
+    img.alt = 'Stained glass';
+
+    fragment.appendChild(img);
+  }
+
+  $hook.appendChild(fragment);
 }
 
 function paintings() {
