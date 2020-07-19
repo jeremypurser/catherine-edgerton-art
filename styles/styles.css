@@ -9,10 +9,6 @@ body {
   padding: 1rem;
 }
 
-header {
-  padding-left: 0.2rem;
-}
-
 header h1 {
   margin: 0;
   padding-right: 0;
@@ -43,6 +39,9 @@ header,
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 0 -8px;
+  padding: 0;
 }
 
 ul {
@@ -112,7 +111,8 @@ li.book-title:before {
 
 main {
   max-width: 1200px;
-  margin-top: 2rem;
+  margin: 2rem 0 2rem;
+  padding: 1rem 0 0;
 }
 
 main ul {
@@ -131,7 +131,7 @@ main ul {
   width: 600px;
   height: 449px;
   text-align: center;
-  margin: 0 auto 1rem;
+  margin: 0 0 2rem;
 }
 
 .glass-preview a,
@@ -141,6 +141,8 @@ main ul {
   width: 100%;
   min-height: 449px;
   color: transparent;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .glass-preview a:hover {
@@ -153,7 +155,7 @@ main ul {
   width: 600px;
   height: 600px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 0 2rem;
   background-image: url(../img/painting-harvey-preview.jpg);
 }
 
@@ -164,6 +166,8 @@ main ul {
   width: 100%;
   min-height: 600px;
   color: transparent;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .paintings-preview a:hover {
@@ -176,7 +180,7 @@ main ul {
   width: 600px;
   height: 379px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 0 2rem;
   background-image: url(../img/photos-slide-preview.jpg);
 }
 
@@ -187,6 +191,8 @@ main ul {
   width: 100%;
   min-height: 379px;
   color: transparent;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .photo-preview a:hover {
@@ -197,4 +203,8 @@ main ul {
 
 .story {
   width: 500px;
+}
+
+.press-links {
+  margin-left: -8px;
 }
