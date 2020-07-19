@@ -123,4 +123,14 @@ function photo() {
   emptyHook();
   deactivate();
   activate('photo');
+
+  const div = document.createElement('div');
+  div.classList.add('photo-preview');
+  const a = document.createElement('a');
+  a.href = '../pages/photos.html';
+  a.textContent = 'See slideshow';
+  div.appendChild(a);
+
+  $hook.appendChild(div);
+  window.scrollTo({ top: 0 });
 }

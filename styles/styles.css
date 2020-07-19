@@ -126,3 +126,26 @@ li.book-title:before {
   line-height: 600px;
   background-color: rgba(0, 128, 128, 0.75);
 }
+
+.photo-preview {
+  width: 600px;
+  height: 379px;
+  text-align: center;
+  margin: 0 auto;
+  background-image: url(../img/photos-slide-preview.jpg);
+}
+
+.photo-preview a,
+.photo-preview a:link,
+.photo-preview a:visited {
+  display: inline-block;
+  width: 100%;
+  min-height: 379px;
+  color: transparent;
+}
+
+.photo-preview a:hover {
+  color: #fff;
+  line-height: 379px;
+  background-color: rgba(0, 128, 128, 0.75);
+}
