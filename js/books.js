@@ -12,11 +12,11 @@ export const booksList = [
     href: '../pages/big-love.html',
   },
   {
-    text: '2000-2008: (Selected Works from Books 5-10)',
+    text: '2000-2008: Selected Works from Books 5-10',
     href: '../pages/sw-5-10.html',
   },
   {
-    text: '1996-2000: Slected Works from Books (1-4)',
+    text: '1996-2000: Selected Works from Books 1-4',
     href: '../pages/sw-1-4.html',
   },
 ];
